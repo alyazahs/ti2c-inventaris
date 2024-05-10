@@ -1,16 +1,11 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Ambil data dari formulir dan simpan dalam array
     $data_barang = array(
         "no" => $_POST["no"],
         "nama_merek" => $_POST["nama_merek"],
         "warna" => $_POST["warna"],
         "jumlah" => $_POST["jumlah"]
     );
-
-    // Lakukan sesuatu dengan data barang, misalnya menyimpan ke database
-
-    // Tampilkan pesan bahwa data telah disimpan
     echo "<h2>Data Barang Telah Disimpan:</h2>";
     echo "<ul>";
     foreach ($data_barang as $key => $value) {
